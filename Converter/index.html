@@ -5,29 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Converter Integer To Roman</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <label for="integer">Enter an Integer :</label>
-        <input type="number" id="integer" name="integer" min="0" size="7"  required>
-        <button type="button" id="button" onclick="convert()">Convert</button>
-        <h5 >The equivalent Roman numeral is below: </h5> <h3 id="result"></h3>
- 
+    <div id ="converter" class="div">
+        <div class="container">
+                <h2 for="integer">Enter an integer : </h2>
+                <input type="number" id="integer" name="integer" min="0" size="7"  required>
+                <button type="button" id="button" onclick="convert()">Convert</button>
+                <h3 id="result"></h3>
+        </div>
+    </div>
             <script>
                 function convert(){
                 let integer =document.getElementById("integer").value;
                 function intToRoman(number){
                     let neededValues = {M:1000,CM:900,D:500,CD:400, C:100,XC:90,
                                         L:50,XL:40,X:10,IX:9,V:5,IV:4,I:1 } ;
-                    let romanNumber= "";       
+                    let romanNumber= ""; 
+                     if (number>3999){
+                        window.alert("Enter a value between 0 and 3999");
+                     } 
+                     else{
                     for (var i in neededValues){
                         while(number >= neededValues[i]){
                             romanNumber +=i;
                             number -= neededValues[i];
                         }
                     } 
-                    return romanNumber;
                 }
-                
+                    return romanNumber;
+            }
                 document.getElementById("result").innerHTML=intToRoman(integer) ;
             }
             </script>
