@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+    /* background-color: rgb(52,53,65); ,var(--tw-bg-opacity))    */
+    
+
+}
+
+html , body {
+    height: 100%;
+   /*  background-color:#acacbe;/*   #6e6e80 rgb(52,53,65, 0.08);*/
+}
+body{
+    /* background-color: #f2f2f2; */
+    padding-top: 10px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    height: 100%;
+    margin: 40px 40px;
+    margin-bottom: 40px;
+    margin-top:0; 
+   /* flex:1 0 auto; */
+}
+
+.useful-links{
+    /* border: 1px solid rgb(5, 5, 39); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    border-radius: 2px;
+    background-color: #6e6e8032 ;
+    height : 100%;
+    width: 25%;
+    float:left;
+    padding: 5px;
+    /* overflow-y:; */
+    text-align: left;
+    align-items: left;
+    box-shadow: #acacbe 40px;
+
+
+    /* position: fixed; */
+}
+.faq-oop-java h3{
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 0;
+    width: 100%;
+    background-color: rgba(46, 43, 49, 0.993);    
+    text-align: center;
+    color : white;
+}
+
+.chatbox{
+    /* border: 5px solid rgb(215, 222, 205); */
+    border-radius:10px;
+    height : 100%;
+    width: 72%;
+    float:right;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    
+}
+
+.chat-body{
+    border : solid  rgba(215, 222, 205, 0.292);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    height: 90%;
+    border-radius:10px;
+    background-color: #6e6e8032;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow-y: scroll;
+}
+
+.chat-footer{
+    /* border : solid   ; */
+    width: 100%;
+    height: 10%;
+    position: relative;
+    align-items: center;
+    /* overflow: auto; /*dddddddddddddddddddddddddddddddddddddd */
+
+    /* opacity: 0; */
+}
+.chat-footer #user_question{
+    border:#6e6e8032; ;
+    width: 90%;
+    height: 100%;
+    min-height: 25px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:rgb(0, 0, 0);
+    
+    /* margin-top: 0.5%; */
+}
+i{
+    font-size: 12px;
+}
+input[type=text]{
+    background-color: #11112232 ;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 20px;
+}
+
+/* input::placeholder{
+    font-size: 200px;
+} */
+
+.chat-footer #SendQuestion{
+    border: 1px  rgba(19, 16, 22, 0.87);    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* opacity: 0.8; */
+    border-radius:10px;
+    width:9% ;
+    height: 90%;margin:5px;
+    /* margin-bottom: 5px; */
+    /* margin-top:5px; */
+    align-items: center;
+    font-size: 10px;
+    min-width: 25px;
+    min-height: 25px;
+    background-color: #6e6e8032 ;   
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    max-width: 100%;
+  max-height: 100%;
+}
+
+.user_request {
+    /* background-color:#696969ab ; */
+    background-color: rgba(46, 43, 49, 0.993);    
+    color: #eee;
+    padding:10px;
+    border-radius:10px;
+     /* text-align:right; */
+    word-wrap:break-word;
+    width: 80%;
+    float: right;
+    margin: 10px;
+}
+.response{
+    background-color: rgba(46, 43, 49, 0.712);
+    color: white;
+    padding:10px;
+    border-radius:10px;
+     /* text-align:right; */
+    word-wrap:break-word;
+    width: 80%;
+    float: left;
+    margin: 10px;
+}
+
+
+.chat-footer #SendQuestion:hover{
+    background-color: rgba(19, 16, 22, 0.87);
+    /* color: rgba(19, 16, 22, 0.87); */
+
+}
+#racourci-links{
+    display: none;
+}
+.faq-oop-java{
+    position: relative;
+    border: 2px solid #6e6e8032;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 47%;
+    overflow-y: auto ;
+    /* overflow-x: scroll; */
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+
+/* .compilator{
+    border: 2px solid #6e6e8032;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 47%;
+    overflow-y: scroll;
+    font-size: 20px;
+    margin-top:3%;
+} */
+
+
+
+/* #user_question{
+    position: relative;
+    width: 90%;
+    border-radius: 3px;
+    height: 50px;
+    margin-top: 10px;
+}
+*/
+
+/* #SendQuestion{
+     position: relative; 
+}  */
+
+.copyright{
+    /* background-color: rgba(46, 43, 49, 0.712); */
+    background-color: rgba(19, 16, 22, 0.87);
+
+    /* background-color:#20408A	; */
+    margin-top: auto;
+    position: relative; /*fixed*/
+    bottom: 0;
+    padding:10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.feedBack:hover {
+    color:black;
+}
+/* .cp-right:hover{
+    color:black;
+} */
+.university:hover{
+    color:black;
+}
+.cp-right span:hover{
+    color:black;
+}
+
+
+
+a{
+   text-decoration:none;
+   color: rgb(2, 2, 62);
+   /* border:2px solid gray; */
+   text-align:left;
+   /* background-color: #010107; */
+   font-size: 15px;
+}
+
+
+a:hover{
+    color: rgba(46, 43, 49, 0.411); 
+ }
+ 
+#feedback:hover{
+    cursor: pointer;
+}
+#university:hover{
+ cursor:pointer;
+}
+#portfolio_germain:hover{
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+    /* list-style-image: url('images/Java-Logo.png'); */
+}
+ul li{
+    /* margin: 20px; */
+    margin-top:20px;
+    text-decoration: none;
+}
+
+
+/* __________________-for PHONES-___________________ */
+
+@media only screen and (max-width:600px)  {
+  body{
+    display:inline-block; /* SCROLLBAR OF THE USER-WINDOW *//*-------------------------------------------------------*/
+    flex-direction: column;
+  }
+
+  .container{
+    display: flex;
+    /* flex-direction: row-reverse ; */
+    height: 100%;
+  }
+  .useful-links{
+display: none;  }
+  .chatbox{
+    width: 100%;
+    margin-bottom: auto;
+    
+  }
+  #racourci-links{
+    display: block;
+    margin: 5px;
+    font-size: 25px;
+    border: 2px solid gray;
+    border-radius: 20px;
+
+}  
+#racourci-links:hover{
+    background-color: rgb(124, 107, 140);
+}
+  .copyright{
+    padding:10px;
+    width: 100%;
+    display: flex;
+  }
+
+}
+
+/* _________________-for TABLETS-_________________________ */
+@media only screen and (max-width:500px){
+    #SendQuestion {
+    /* padding-top:10px;
+        width: 60px;
+        height: 2px; */
+        display: inline;
+      }
+}
+
+/* _____________-for MEDIUM DEVICES-_____________________ */
+
+@media only screen and (max-width:768px){
+    #SendQuestion {
+            margin-top:2px;
+            width: 80px;
+            height: 30px;
+          }
+}
+
+/* ________________- for LAPTOPS -__________________________ */
+@media only screen and (min-width:992px){
+    #SendQuestion{
+       
+    }
+}

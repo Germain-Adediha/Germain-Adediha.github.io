@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/9e32feefc3.css" crossorigin="anonymous">    
+    <script src="https://kit.fontawesome.com/9e32feefc3.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/mtuci_logo.png" type="image/x-icon">
+    <title>LabHelper</title>
+</head>
+<body>
+    <div class="container">
+        <div class="faq">
+         
+            <i id= "racourci-links" class="fa-sharp fa-solid fa-link" onclick="openUsefulLinks()"></i>  
+       
+        </div>  
+        <div class="useful-links">
+        <div class="faq-oop-java">  
+            <h3>Quelques liens utiles</h3>
+            <br><br>
+           <ul>
+
+            <li><a href="https://google.com" target="_blank">Les bases de la programmation orientée objet</a></li>
+            <li><a href="https://google.com" target="_blank">Les classes et les objets</a>  </li>
+            <li><a href="https://google.com" target="_blank">Les concepts de OOP</a>  </li>
+
+            <li><a href="https://google.com" target="_blank">La plateforme Java (Java Platform) </a>  </li>
+            <li><a href="https://google.com" target="_blank">La syntaxe de Java</a>  </li>
+            <li><a href="https://google.com" target="_blank">Java un language modèle de programmation orientée objet</a>  </li>
+           
+
+           </ul>
+
+        </div>
+
+        <!-- <div class="compilator">
+            <p>
+                <code>
+                    <pre>
+
+                </pre>
+            </code>
+            </p>
+        </div> -->
+         
+    </div>  
+
+    <div class="chatbox" title="chatbox">
+      <!------------
+        <div class="chat-header">
+            <h3> chat</h3> 
+        </div>
+        ----->
+        <div class="chat-body" id="chat-messages">
+            <!------------LES MESSAGES-------->
+            <!-- <p>messages</p> -->
+        </div>
+        <div class="chat-footer">
+            <input type="text" name="user_question" id="user_question" placeholder="Entrer votre question!" >
+            <button type="submit" id ="SendQuestion"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+
+    <div class="copyright" style="color:white;">
+
+        <div class="feedBack">
+            <p id="feedback">Ecrivez-nous Votre commentaire</p>
+            
+        </div>
+
+        <div class="cp-right"> 
+            <p>&copy; 2023 <span id ="portfolio_germain">Germain Adediha</span>. All rights reserved</p>
+           
+        </div>
+
+       <div class="university">
+        
+        <p id ="university">MTUCI <img src="images/mtuci_logo.png" style="width: 15px; height: 15px;"> 2023</p>
+       </div>
+        
+    </div>
+
+    
+    <!-- <script>
+        window.addEventListener('unload', function(){sessionStorage.setItem('isRealoading','true');});
+        window.addEventListener('load', function(){
+        if(!sessionStorage.getItem('isRealoading')){
+            localStorage.clear();
+        }
+        sessionStorage.removeItem('isRealoading');
+    });
+    </script>     -->
+
+<!-- <script src ="chatbox_manager.js"></script> -->
+<script src="scripts/api-client.js"></script>
+<script>    
+   
+var pElement = document.getElementById('feedback');
+
+// Add click event listener to the <p> element
+pElement.addEventListener('click', function() {
+  // Redirect to the feedback page
+  window.open ('feedback.html', '_blank');
+});
+
+</script>
+<script>
+    
+var portfolioPage = document.getElementById('portfolio_germain');
+// Add click event listener to the <p> element
+portfolioPage.addEventListener('click', function() {
+  // Redirect to the feedback page
+window.open ('https://google.com', '_blank');
+});
+
+</script>
+
+<script>
+    // Nettoyage de la memoire locale du browser
+window.addEventListener('beforeunload', () => {
+localStorage.clear(); // Effacer les données de localStorage
+// sessionStorage.clear(); // Effacer les données de sessionStorage
+});
+</script>
+</body>
+</html>
